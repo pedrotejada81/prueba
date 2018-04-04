@@ -8,7 +8,7 @@ myApp.controller("myController", ["$scope", function($scope) {
     
     $scope.onGoogleLogin= function() {
         var params = {
-            'clientid': '33957089096-gh0s3hcut9raumdter912kki19g651qf.apps.googleusercontent.com',
+            'clientid': '33957089096-9n1gggkk0ultm9h5ldql1vk55r0pvu6f.apps.googleusercontent.com',
             'coockiepolicy': 'single_host_origin',
             'callback': function(result) {
                 if(result['status']['signed_in']) {
