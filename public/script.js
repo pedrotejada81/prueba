@@ -8,11 +8,11 @@ myApp.controller("myController", ["$scope", function($scope) {
     
     $scope.onGoogleLogin= function() {
         var params = {
-            'clientid': '33957089096-9n1gggkk0ultm9h5ldql1vk55r0pvu6f.apps.googleusercontent.com',
+            'clientid': '26501735112-ojthasfjlhimmenskgpnt3f6nimu1sdm.apps.googleusercontent.com',
             'coockiepolicy': 'single_host_origin',
             'callback': function(result) {
                 if(result['status']['signed_in']) {
-                     $scope.link="guestview.hmtl";
+                     
                     var request = gapi.client.plus.people.get (
                         {
                             'userId': 'me'

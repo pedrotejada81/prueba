@@ -3,7 +3,7 @@
 // Google Login
 
 function onLoadFunction() {
-    gapi.client.setApiKey('AIzaSyC8oe2UBytuFWRnFeUBPM7VZzMLURsxgOQ');
+    gapi.client.setApiKey('AIzaSyCVcZSYdAJUD0QV4XhL54YhyqRWpC9PxhA');
     gapi.client.load('plus', 'v1', function() {});
     
 }
