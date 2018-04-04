@@ -13,9 +13,12 @@ myApp.controller("myController", ["$scope", function($scope) {
             'callback': function(result) {
                 if(result['status']['signed_in']) {
                      
+                     
                     var request = gapi.client.plus.people.get (
                         {
+                            
                             'userId': 'me'
+                            
                            
                         }
                         
@@ -26,8 +29,8 @@ myApp.controller("myController", ["$scope", function($scope) {
                                 $scope.gmail.username = resp.displayName;
                                 $scope.gmail.email= resp.emails[0].value;
                                 $scope.g_image= resp.image.url;
-                                console.log(resp)
-                                console.log(result)
+                                $scope.nombre= 'Tony';
+                                
                             });
                         
                         });
