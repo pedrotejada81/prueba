@@ -24,7 +24,8 @@ myApp.controller("myController", ["$scope", function($scope) {
                                 $scope.gmail.username = resp.displayName;
                                 $scope.gmail.email= resp.emails[0].value;
                                 $scope.g_image= resp.image.url;
-                                
+                                console.log(resp)
+                                console.log(result)
                             });
                         
                         });
