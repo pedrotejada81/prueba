@@ -1,4 +1,4 @@
-s<!Doctype html>
+<!Doctype html>
 
 <html lang ="en">
     <head>
@@ -16,8 +16,11 @@ s<!Doctype html>
     <body ng-app="myApp" ng-controller="myController">
         <h1>Google Login </h1>
         <div class="g-signin2" data-onsuccess="onSignIn">
-        <input type="button" ng-click="onGoogleLogin()" value="Login" style="width:100px; height:60px"/>
+            
+        <input type="button" ng-click="onGoogleLogin()" ng-href="/{{link}}"value="Login" style="width:300px; height:60px"/>
+        
         </div>
+        
         <h4>{{gmail.username}}</h4>
         <h4>{{gmail.email}}</h4>
         

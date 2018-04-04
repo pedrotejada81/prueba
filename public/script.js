@@ -12,9 +12,11 @@ myApp.controller("myController", ["$scope", function($scope) {
             'coockiepolicy': 'single_host_origin',
             'callback': function(result) {
                 if(result['status']['signed_in']) {
+                     $scope.link="guestview.hmtl";
                     var request = gapi.client.plus.people.get (
                         {
                             'userId': 'me'
+                           
                         }
                         
                         
