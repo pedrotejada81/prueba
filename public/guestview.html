@@ -34,14 +34,11 @@
     <!--------------------------------------------Scripts' start---------------------------------------------------------------------------------------->
     <script>
         function Select() {
-
             document.getElementById("SelectTeacher").value = -1;
-
         }
 
 
         function Lines() {
-
             document.getElementById("inputlines").value = null;
             // document.getElementById("inputlines").focus();
         }
@@ -73,7 +70,9 @@
 
 
         function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
+            /*var auth2 = gapi.auth2.getAuthInstance();*/
+            
+            var auth2 = gapi.auth2.render();
             auth2.signOut().then(function() {
                 console.log('User signed out.');
             });
