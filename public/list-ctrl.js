@@ -52,11 +52,14 @@ angular
                 c++;
                 $scope.id= c.toString();
                 
-                
-                
-                
             });
         } 
+        
+        $scope.logout = function() {
+          auth2.disconnect();
+          
+        }
+        
         
         
         function refresh(){
