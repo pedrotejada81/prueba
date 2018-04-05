@@ -55,13 +55,7 @@ angular
             });
         } 
         
-        $scope.logout = function() {
-          auth2.disconnect();
-          
-        }
-        
-        
-        
+       
         function refresh(){
             $http.get("/api/v1/groups").then(function (response){
                 $scope.groups = response.data; 
