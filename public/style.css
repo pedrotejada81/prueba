@@ -49,6 +49,24 @@
             right: 70px;
 }
 
+.logout {
+    text-decoration: none;
+            padding-top: 8px;
+            padding-bottom:  8px;
+            padding-left: 14px;
+            padding-right: 14px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #EFFBF8;
+            background-color: #8A0829;
+            border-radius: 6px;
+            border: 2px solid #E6E6E6;
+            position: absolute;
+            top: 50px;
+            right: 30px;
+}
+
+
 .logoutindex {
     text-decoration: none;
             padding-top: 8px;
