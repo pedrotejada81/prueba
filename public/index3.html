@@ -1,0 +1,62 @@
+<!Doctype html>
+
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>RresearchGroupsLogin</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" src=""></script>
+        <script src="script.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/client.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="26501735112-ojthasfjlhimmenskgpnt3f6nimu1sdm.apps.googleusercontent.com">
+        
+    </head>
+    
+    <body ng-app="myApp" ng-controller="myController">
+        <h1>RESEARCH GROUPS</h1>
+        <div class="g-signin2" data-onsuccess="onSignIn">
+            
+        <input type="button" ng-click="onGoogleLogin()" ng-href="/{{link}}"value="Login" style="width:300px; height:60px"/>
+        
+        </div>
+        
+        <h4>{{gmail.username}}</h4>
+        <h4>{{gmail.email}}</h4>
+        <h4>{{nombre}}</h4>
+        
+        <img ng-src="{{g_image}}" style="width:100px; height:100px">
+        
+        
+        <h1>Facebook Login </h1>
+        <input type="button" ng-click="onFBLogin" value="Login" style="width:100px; height:60px"/>
+        
+        <h4>{{facebook.username}}</h4>
+        <h4>{{facebook.email}}</h4>
+        
+        <img ng-src="{{fb_image}}" style="width:100px; height:100px">
+        
+        
+        
+        <script type="text/javascript" src="app.js"></script>
+        
+        <script type="text/javascript">
+            (function() {
+                var p = document.createElement('script');
+                p.type= 'text/javascript';
+                p.async=true;
+                p.src= 'https://apis.google.com/js/client.js?onload=onLoadFunction';
+                var s= document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(p, s);
+                
+                })();
+            
+            
+        </script>
+        
+        
+    </body>
+    
+    
+    
+</html>

@@ -29,14 +29,13 @@ myApp.controller("myController", ["$scope", function($scope) {
                                 $scope.gmail.username = resp.displayName;
                                 $scope.gmail.email= resp.emails[0].value;
                                 $scope.g_image= resp.image.url;
-                                $scope.nombre= 'Tony';
-                                console.log('Tony');
+                                
                                 
                             });
                         
                         });
                 }
-                $scope.nombre= 'Willy';
+               
                 
             },
             'approvalprompt':'force',
