@@ -46,9 +46,7 @@
 
         function onSuccess(googleUser) {
             console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-            console.log('Logged in as: ' + googleUser.getBasicProfile().getEmail());
-            console.log('Logged in as: ' + googleUser.getBasicProfile().getPicture());
-
+            
             var nombre = 'Logged in as: ' + googleUser.getBasicProfile().getName();
             window.open("https://pruebapts.herokuapp.com/guestview.html");
 
