@@ -7,6 +7,8 @@
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+      windows.open("https://pruebapts.herokuapp.com/guestview.html")
+      
     }
     function onFailure(error) {
       console.log(error);
